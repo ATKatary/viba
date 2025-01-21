@@ -1,0 +1,32 @@
+type Attachment {
+    id: String! 
+    imageUrl: String 
+    fileUrl: String
+}
+
+type Reaction {
+    id: String! 
+    user: CustomUser! 
+    emoji: String!
+}
+
+type Message {
+    id: String! 
+    sender: CustomUser!
+
+    text: String! 
+    timeSent: DateTime!
+    reactions: [Reaction]
+    attachments: [Attachment]
+}
+
+type Chat {
+    id: String! 
+    title: String 
+    unreadCount: Int!
+
+    admins: [CustomUser]!
+    members: [CustomUser]!
+
+    messages: [Message]!
+}

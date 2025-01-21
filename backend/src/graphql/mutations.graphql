@@ -1,0 +1,12 @@
+type Mutation {
+    readChat(id: String!, uid: String!): Chat 
+    updateChat(id: String!, uid: String!, title: String): Chat 
+    
+    deleteMessage(id: String!): Chat
+    editMessage(id: String!, text: String!): Chat
+    sendMessage(id: String!, uid: String!, text: String!): Chat
+    reactMessage(id: String!, uid: String!, reaction: String!): Chat
+    
+    broadcastChat(id: String!, uid: String!, message: String!): Chat 
+    createChat(admin_uids: [String!]!, member_uids: [String]!, title: String): Chat
+}

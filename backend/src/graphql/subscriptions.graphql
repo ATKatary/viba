@@ -1,0 +1,8 @@
+type CallMessage {uid: String!, cid: String!, data: String!}
+
+type Subscription {
+    watchUser(id: String!): CustomUser!
+
+    watchChat(id: String!, uid: String!): Chat!
+    watchCall(uid: String!): CallMessage!
+}

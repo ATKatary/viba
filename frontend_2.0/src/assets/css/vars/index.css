@@ -1,0 +1,41 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap");
+@media (prefers-color-scheme: dark) {
+    :root {
+        --bg-primary: #000;
+        --bg-secondary: #2E2E2E;
+
+        --input-bg: #292929;
+        --message-other-bg: #2E2E2E;
+
+        --message-mine-text-color: #ffffff;
+        --message-mine-bg: #3B7745;
+
+        --text-color-primary: #F4F4F4;
+        --text-color-secondary: #B9B9B9;
+
+        --backdrop: url("../../media/chat/dark-backdrop.png");
+    }
+}
+
+@media (prefers-color-scheme: light) {
+    :root {
+        --bg-primary: #fff;
+        --bg-secondary: #f5f7fb;
+
+        --input-bg: #EEEEEF;
+        --message-other-bg: #E9E9E9;
+
+        --message-mine-text-color: #ffffff;
+        --message-mine-bg: #3B7745;
+
+        --text-color-primary: #1B1B1B;
+        --text-color-secondary: #929292;
+
+        --backdrop: url("../../media/chat/light-backdrop.png");
+    }
+}
+
+:root {
+    --footer-height: 80px;
+    --header-height: 70px;
+}

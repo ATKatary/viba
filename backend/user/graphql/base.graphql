@@ -1,0 +1,17 @@
+scalar DateTime
+scalar Date
+
+type Notification {
+    cid: String!
+    message: Message! 
+}
+
+type CustomUser {
+    id: String!
+    name: String!
+    email: String! 
+    chats: [Chat]
+    
+    pfp: String 
+    dateOfBirth: Date!
+}

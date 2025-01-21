@@ -1,0 +1,57 @@
+@font-face {
+  font-family: 'Texgyreheros Regular';
+  src: url('./assets/fonts/TeX-Gyre-Heros/texgyreheros-regular.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Texgyreheros Bold';
+  src: url('./assets/fonts/TeX-Gyre-Heros/texgyreheros-bold.otf') format('opentype');
+}
+
+html {
+  scrollbar-width: none;
+  min-height: calc(100% + env(safe-area-inset-top));
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--bg-primary);
+  scrollbar-width: none;
+  width: 100%;
+  height: 100%;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  monospace;
+}
+
+input {
+  border: none;
+  outline: none;
+  background: transparent;
+}
+
+
+@media (prefers-color-scheme: dark) {
+  p {
+    color: #fff
+  }
+
+  textarea {
+    color: #fff;
+    background-color: #000
+  }
+}

@@ -1,0 +1,2 @@
+calls = {}
+chats_queue = {}

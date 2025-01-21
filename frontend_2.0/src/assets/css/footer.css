@@ -1,0 +1,33 @@
+/***** Always True *****/
+@media only screen {
+    .footer {
+        bottom: 0;
+        z-index: 1;
+        opacity: 0.95;
+        height: var(--footer-height);
+        background-color: var(--bg-primary);
+        /* border-top: 1px solid var(--border-color); */
+    }
+
+    .footer-icon {
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        width: var(--font-size-icon);
+        height: var(--font-size-icon);
+    }
+
+    .footer-icon-container {
+        margin: 10px 0 0 0;
+    }
+}
+
+/***** > 1000px *****/
+@media only screen and (min-width: 1000px) {
+
+}
+
+/***** <= 1000px *****/
+@media only screen and (max-width: 1000px) {
+
+}

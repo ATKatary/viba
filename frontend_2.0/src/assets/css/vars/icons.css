@@ -1,0 +1,42 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap");
+@media (prefers-color-scheme: dark) {
+    :root {
+        --icon-pay-active: url("../../media/footer/pay-white.png");
+        --icon-chat-active: url("../../media/footer/chat-white.png");
+        --icon-call-active: url("../../media/footer/call-white.png");
+
+        --icon-back: url("../../media/header/back-dark.png");
+        --icon-video: url("../../media/chat/video-dark.png");
+
+        --icon-chat-img: url("../../media/chat/cam-dark.png");
+        --icon-chat-voice: url("../../media/chat/mic-dark.png");
+        --icon-chat-attach: url("../../media/chat/attach-dark.png");
+        --icon-new-chat: url("../../media/header/new-chat-dark.png");
+    }
+}
+
+@media (prefers-color-scheme: light) {
+    :root {
+        --icon-pay-active: url("../../media/footer/pay-black.png");
+        --icon-chat-active: url("../../media/footer/chat-black.png");
+        --icon-call-active: url("../../media/footer/call-black.png");
+
+        --icon-back: url("../../media/header/back-light.png");
+        --icon-video: url("../../media/chat/video-light.png");
+
+        --icon-chat-img: url("../../media/chat/cam-light.png");
+        --icon-chat-voice: url("../../media/chat/mic-light.png");
+        --icon-chat-attach: url("../../media/chat/attach-light.png");
+        --icon-new-chat: url("../../media/header/new-chat-light.png");
+    }
+}
+
+:root {
+    --chat-thumbnail-icon-size: 50px;
+
+    --icon-chat-send: url("../../media/chat/send.png");
+    
+    --icon-pay: url("../../media/footer/pay-gray.png");
+    --icon-call: url("../../media/footer/call-gray.png");
+    --icon-chat: url("../../media/footer/chat-gray.png");
+}

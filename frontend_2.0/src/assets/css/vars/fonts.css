@@ -1,0 +1,69 @@
+:root {
+    --font-size-icon-min: 22; 
+    --font-size-icon-max: 26;
+
+    --font-size-title-min: 20; 
+    --font-size-title-max: 24;
+
+    --font-size-subtitle-min: 18; 
+    --font-size-subtitle-max: 22;
+
+    --font-size-paragraph-min: 16; 
+    --font-size-paragraph-max: 20;
+
+    --font-size-helper-min: 11;
+    --font-size-helper-max: 15;
+
+    --font-view-min: 576;
+    --font-view-max: 1280;
+
+    --font-size-icon: clamp(
+        calc(var(--font-size-icon-min) * 1px), 
+        calc(
+            (var(--font-size-icon-min) * 1px) + 
+            (var(--font-size-icon-max) - var(--font-size-icon-min)) * 
+            ((100vw - (var(--font-view-min) * 1px)) / var(--font-view-max))
+        ), 
+        calc(var(--font-size-paragraph-max) * 1px)
+    );
+
+    --font-size-title: clamp(
+        calc(var(--font-size-title-min) * 1px), 
+        calc(
+            (var(--font-size-title-min) * 1px) + 
+            (var(--font-size-title-max) - var(--font-size-title-min)) * 
+            ((100vw - (var(--font-view-min) * 1px)) / var(--font-view-max))
+        ), 
+        calc(var(--font-size-paragraph-max) * 1px)
+    );
+
+    --font-size-subtitle: clamp(
+        calc(var(--font-size-subtitle-min) * 1px), 
+        calc(
+            (var(--font-size-subtitle-min) * 1px) + 
+            (var(--font-size-subtitle-max) - var(--font-size-subtitle-min)) * 
+            ((100vw - (var(--font-view-min) * 1px)) / var(--font-view-max))
+        ), 
+        calc(var(--font-size-paragraph-max) * 1px)
+    );
+
+    --font-size-paragraph: clamp(
+        calc(var(--font-size-paragraph-min) * 1px), 
+        calc(
+            (var(--font-size-paragraph-min) * 1px) + 
+            (var(--font-size-paragraph-max) - var(--font-size-paragraph-min)) * 
+            ((100vw - (var(--font-view-min) * 1px)) / var(--font-view-max))
+        ), 
+        calc(var(--font-size-paragraph-max) * 1px)
+    );
+
+    --font-size-helper: clamp(
+        calc(var(--font-size-helper-min) * 1px), 
+        calc(
+            (var(--font-size-helper-min) * 1px) + 
+            (var(--font-size-helper-max) - var(--font-size-helper-min)) * 
+            ((100vw - (var(--font-view-min) * 1px)) / var(--font-view-max))
+        ), 
+        calc(var(--font-size-helper-max) * 1px)
+    )
+}
